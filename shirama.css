@@ -1,0 +1,70 @@
+html{
+    overflow: hidden;
+    background-image: url("imgs/ramenbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* rotating ramen */
+  .ramen img{
+    width: 600px;
+    height: auto;
+    position: relative;
+    left: 55%;
+    top: 100px;
+    animation: rotate 10s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.button{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    margin-left: 9%;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #FFE14C;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.button:hover{
+    background:#ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color: #000000;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+}
+
+/* ("CLICK HERE TO ORDER") */
+
+@font-face {
+    font-family: edo;
+    src: url(font/edosz.ttf);
+}
+
+.button-name{
+    padding-left: 11%;
+    font-size: 50px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: edo;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px  #F20409, -2px -2px 2px  #F20409, 2px -2px 2px  #F20409, -2px 2px 2px #F20409;
+}
+
+.button-name:hover{
+    color: #b3b3b3;
+    text-shadow: 2px 2px 2px  #000000, -2px -2px 2px  #000000, 2px -2px 2px  #000000, -2px 2px 2px #000000;
+}
+

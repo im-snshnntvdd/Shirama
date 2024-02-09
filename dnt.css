@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: hidden;
+     height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    top: 0;
+    background: transparent;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: edo;
+    src: url(font/edosz.ttf);
+}
+
+.brand-logo{
+    padding:5px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    background: url(imgs/menubg.png);
+    background-size: cover;
+    padding-right: 70%;
+    padding-top:15px;
+    padding-bottom: 25px;
+}
+
+.brand-logo p{
+    font-size:57px;
+    font-family: edo;
+    color:#ffff;
+    font-weight:300;
+    position: absolute;
+    padding-top: 20px;
+    padding-left:65px;
+}
+
+.brand-logo img{
+    position: relative;
+    width:370px;
+    height:110px;
+}
+
+.dito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    background: #1E1F21;
+
+}
+
+.dinein{
+    width: 290px;
+    height: 320px;
+    padding: 10px;
+    padding-top: 2%;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    background: #D9DCE1;
+    cursor: pointer;
+    transition: 0.2 all ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dinein img{
+    width: 100%;
+    height: 200px;
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.takeout{
+    width: 290px;
+    height: 320px;
+    padding: 10px;
+    padding-top: 2%;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    background: #D9DCE1;
+    cursor: pointer;
+    transition: 0.2 all ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.takeout img{
+    width: 100%;
+    height: 200px;
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.dinein button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #5A5B5D;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all ease-in-out;
+    text-shadow: 2px 2px 2px  #101010, -2px -2px 2px  #101010, 2px -2px 2px  #101010, -2px 2px 2px #101010;
+}
+
+.takeout button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #5A5B5D;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all ease-in-out;
+    text-shadow: 2px 2px 2px  #101010, -2px -2px 2px  #101010, 2px -2px 2px  #101010, -2px 2px 2px #101010;
+}
+
+.dinein button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 #000000;
+}
+
+.takeout button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 #000000;
+}
+
+.dito a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
